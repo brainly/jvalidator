@@ -51,6 +51,7 @@ class SchemaSpec
                 ],
                 "number" => [
                     "minimum",
+                    "exclusiveMinimum",
                     "maximum",
                     "enum",
                     "description",
@@ -59,6 +60,7 @@ class SchemaSpec
                 ],
                 "integer" => [
                     "minimum",
+                    "exclusiveMinimum",
                     "maximum",
                     "enum",
                     "description",
