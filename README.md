@@ -7,7 +7,7 @@ JSON Schema validation library for [draft v3](http://tools.ietf.org/search/draft
 
 ## Implemented features
 - types: `array`, `boolean`, `integer`, `null`, `number`, `object`, `string`, `union`
-- constraints: `type`, `properties`, `additionalProperties`, `items`, `required`, `minimum`, `maximum`, `minItems`, `maxItems`, `uniqueItems`, `pattern`, `minLength`, `maxLength`, `enum`
+- constraints: `type`, `properties`, `additionalProperties`, `items`, `required`, `minimum`, `exclusiveMinimum`, `maximum`, `minItems`, `maxItems`, `uniqueItems`, `pattern`, `minLength`, `maxLength`, `enum`
 - other: `description`, `id`, `extends`
 
 # Usage

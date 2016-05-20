@@ -37,7 +37,13 @@ class NumberConstraint implements Constraint
         }
         
         if (isset($schema->minimum)) {
-            if ($element < $schema->minimum) {
+            if ($element == $schema->minimum) {
+                if (isset($schema->exclusiveMinimum)) {
+                    if ($schema->exclusiveMinimum) {
+                        $errors[$myName][] = 'must be exclusively greater than '.$schema->minimum;
+                    }
+                }
+            } else if ($element < $schema->minimum) {
                 $errors[$myName][] = 'must be greater than '.$schema->minimum;
             }
         }
